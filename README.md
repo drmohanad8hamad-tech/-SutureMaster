@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SutureMaster PRO | Surgical Suturing Masterclass</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="[https://fonts.googleapis.com](https://fonts.googleapis.com)">
+  <link rel="preconnect" href="[https://fonts.gstatic.com](https://fonts.gstatic.com)" crossorigin>
+  <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap)" rel="stylesheet">
   <style>
     /* ============================================================
        CSS VARIABLES
@@ -49,10 +49,10 @@
       color: var(--ink);
       line-height: 1.6;
       text-align: left;
-      /* Flexbox to make the UI fill screen height */
       display: flex;
       flex-direction: column;
       min-height: 100vh;
+      width: 100%;
     }
 
     /* ---------- Top bar ---------- */
@@ -63,10 +63,11 @@
       display: flex;
       align-items: center;
       gap: 24px;
-      padding: 12px 4vw; /* Fluid padding */
+      padding: 12px 4vw; /* الهوامش مرنة تتمدد مع الشاشة */
       background: rgba(10, 31, 51, 0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(255,255,255,0.08);
+      width: 100%;
     }
     .brand { display: flex; align-items: center; gap: 10px; color: #fff; }
     .brand-mark { font-size: 22px; }
@@ -115,8 +116,9 @@
         linear-gradient(160deg, var(--navy-900), var(--navy-800) 60%, var(--green-800));
       color: #fff;
       text-align: center;
-      padding: 8vh 4vw 6vh; /* Fluid padding */
+      padding: 8vh 4vw 6vh;
       border-bottom: 4px solid var(--mint);
+      width: 100%;
     }
     .hero-badge {
       display: inline-block;
@@ -258,7 +260,7 @@
     .pathway-head { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
     .pathway-head h2 { margin: 0; font-size: 24px; font-weight: 800; color: var(--navy-800); }
     .pathway-sub { color: var(--mut); font-size: 14.5px; margin: 0 0 20px; max-width: 820px; }
-    .acc { border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 6px 18px rgba(10, 45, 60, 0.06); }
+    .acc { border: 1px solid var(--line); border-radius: 16px; background: #fff; box-shadow: 0 6px 18px rgba(10, 45, 60, 0.06); width: 100%; }
     .acc-item { border-bottom: 1px solid var(--line); }
     .acc-item:last-child { border-bottom: 0; }
     .acc-btn {
@@ -295,7 +297,6 @@
     .acc-inner { padding: 4px 22px 26px; }
     .acc-intro { font-size: 14px; color: var(--mut); max-width: 780px; margin: 0 0 18px; }
     
-    /* Auto-fit for accordion grid */
     .acc-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
     
     .topic-card { background: #fafdfb; border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
@@ -372,12 +373,12 @@
 
     /* ---------- Main / categories ---------- */
     .main { 
-      flex: 1; /* Pushes footer to the bottom */
+      flex: 1; /* Pushes footer down */
       width: 100%;
       margin: 0 auto; 
       padding: 44px 4vw 20px; 
     }
-    .category { margin-bottom: 52px; }
+    .category { margin-bottom: 52px; width: 100%; }
     .category h2 { display: flex; align-items: center; gap: 12px; font-size: 24px; font-weight: 800; color: var(--navy-800); margin: 0 0 4px; }
     .cat-no {
       background: linear-gradient(135deg, var(--green-600), var(--teal));
@@ -389,8 +390,7 @@
     }
     .cat-sub { color: var(--mut); margin: 0 0 20px 40px; font-size: 14.5px; }
     
-    /* Auto-fit grid for cards */
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; width: 100%; }
 
     /* ---------- Cards ---------- */
     .card {
@@ -464,7 +464,7 @@
     .modal-backdrop[hidden] { display: none !important; }
     
     .modal {
-      width: min(1200px, 95vw); /* Responsive width */
+      width: min(1200px, 95vw); 
       max-height: 90vh;
       overflow-y: auto;
       background: #fff;
@@ -692,6 +692,7 @@
       margin-top: 44px;
       background: linear-gradient(160deg, var(--navy-900), var(--navy-800) 55%, var(--green-800));
       border-top: 4px solid var(--mint);
+      width: 100%;
     }
     .footer-inner {
       width: 100%;
@@ -767,7 +768,6 @@
       .pathway-head h2 { font-size: 21px; }
       .pathway-sub { font-size: 14px; }
 
-      /* Keep a single column on mobile */
       .grid { grid-template-columns: 1fr; gap: 16px; }
       .acc-grid { grid-template-columns: 1fr; gap: 12px; }
 
@@ -938,7 +938,7 @@
       </div>
       <p class="footer-disclaimer">Educational tool for training purposes only — not a substitute for supervised surgical training, local protocols, or institutional guidelines.</p>
       <div class="footer-contact">
-        <a class="contact-link" href="https://www.instagram.com/dr.mhn.d?igsh=bnh6bGIwOGNxbTl0" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @dr.mhn.d">
+        <a class="contact-link" href="[https://www.instagram.com/dr.mhn.d?igsh=bnh6bGIwOGNxbTl0](https://www.instagram.com/dr.mhn.d?igsh=bnh6bGIwOGNxbTl0)" target="_blank" rel="noopener noreferrer" aria-label="Instagram: @dr.mhn.d">
           <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
             <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
             <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
@@ -1243,615 +1243,4 @@
             ["Suture granuloma", "Use the smallest adequate caliber; remove non-absorbable material once healed."],
             ["Sternal instability (cardiac)", "Verify wire configuration and stability; manage parasternal motion."]
           ],
-          removal: "Non-absorbable material is left in place unless it erodes or becomes infected.",
-          steps: [
-            { t: "Deep pass", c: "Enter at the base of the wound or fascial defect, taking a deep bite that includes the bleeding point in its grasp." },
-            { t: "Cross the midline", c: "Exit on the opposite side, then loop the suture back over the top of the wound toward your starting side." },
-            { t: "Form the 8", c: "Cross the midline a second time so the two bites form a figure-of-eight, intersecting at the center of the defect." },
-            { t: "Compress", c: "Tension both loops simultaneously so the crossing point compresses the tissue between them — achieving hemostasis." },
-            { t: "Tie & secure", c: "Tie firmly — apposition and compression, not strangulation — and cut the tails short." }
-          ]
-        },
-        {
-          id: "purse", category: "advanced", icon: "🎯",
-          name: "Purse-String",
-          tagline: "A circumferential gather that inverts tissue and closes circular openings.",
-          videoId: "mvFfm0Msbwo",
-          videoSource: "Andrew Wright",
-          tags: ["Stoma", "Inversion", "Circular opening"],
-          thread: {
-            material: "Non-absorbable monofilament (Prolene) or absorbable (Vicryl) 2-0 / 3-0.",
-            absorbable: "Optional",
-            sizes: "Appendix stump 3-0 / 4-0 · Stoma 2-0 / 3-0 · Enterotomy 3-0",
-            needle: "Tapered point, 3/8 circle (e.g., SH-1 taper)",
-            brands: "Prolene 3-0 · Vicryl 3-0"
-          },
-          indications: [
-            "Stoma creation (end colostomy or ileostomy)",
-            "Enterotomy / cystotomy closure",
-            "Securing catheters and drains; closing small circular wounds",
-            "Appendiceal stump inversion (historic — often stapled or ligated today)"
-          ],
-          technique: [
-            "Take continuous circumferential bites 3–5 mm from the opening edge.",
-            "Complete the full circle back to the starting point.",
-            "Gather both ends and tie — the tissue inverts and the opening closes.",
-            "Tie gently: apposition without stenosis."
-          ],
-          note: "Modern practice: the appendiceal stump is usually closed with an endoloop or stapler; the purse-string remains essential for stomas and for securing tubes and drains.",
-          complications: [
-            ["Stenosis / stricture", "Over-tightening narrows the lumen — tie until apposed, not strangulated."],
-            ["Leak (enterotomy)", "Take full-thickness bites; reinforce with interrupted seromuscular (Lembert) stitches."],
-            ["Tissue tearing on gather", "Use an atraumatic tapered needle and gather gradually."],
-            ["Inverted ischemic cuff", "Excess inversion devascularizes the rim — keep the inverted cuff small."]
-          ],
-          removal: "Usually left in place or removed once the tract matures, depending on indication.",
-          steps: [
-            { t: "Circumferential bites", c: "Take continuous bites 3–5 mm from the opening edge, at equal depth, traveling around the full circumference." },
-            { t: "Complete the circle", c: "Return to the starting point with the needle — both ends now flank the first bite, forming a complete loop." },
-            { t: "Gather", c: "Draw both ends taut like a drawstring to gather the tissue and invert the opening inward." },
-            { t: "Assess inversion", c: "Confirm the edges invert cleanly and the lumen remains patent — no stenosis or tissue tearing." },
-            { t: "Tie", c: "Tie both ends gently — apposed, not strangulated — and trim; reinforce with Lembert stitches if leakage is a concern." }
-          ]
-        },
-        {
-          id: "kessler", category: "ortho", icon: "🦴",
-          name: "Modified Kessler (Tendon Repair)",
-          tagline: "Core locking suture for flexor tendon repairs — strength where it counts.",
-          videoId: "IUk26UtHRCg",
-          videoSource: "MedSync — Surgical Skills",
-          tags: ["Tendon", "Flexor", "Core suture"],
-          thread: {
-            material: "Non-absorbable braided core (Ethibond, FiberWire-style). Never absorbable for the tendon core.",
-            absorbable: "No (core) · Epitendinous may be 6-0 Prolene / nylon",
-            sizes: "Core 3-0 / 4-0 · Epitendinous 6-0",
-            needle: "Round-bodied (tapered) point for tendon, 3/8 circle",
-            brands: "Ethibond 3-0 · FiberWire 3-0 · Prolene 6-0"
-          },
-          indications: [
-            "Flexor tendon lacerations (especially zone II, 'no man's land')",
-            "Extensor tendon injuries",
-            "Primary repair within 12–24 hours in a hand-surgery setting",
-            "Repairs where early protected mobilization is planned"
-          ],
-          technique: [
-            "Freshen both tendon ends with a sharp scalpel.",
-            "Enter the core suture 1 cm proximal to the cut and run it longitudinally.",
-            "Exit transversely to create a locking loop, then cross the repair site.",
-            "Mirror the configuration on the distal stump and tie the core (4-strand preferred).",
-            "Add a 6-0 epitendinous running suture to smooth the junction (adds ~25% strength)."
-          ],
-          note: "Repair strength scales with the number of core strands crossing the repair (2-strand < 4-strand < 6-strand). Four-strand repairs such as the modified Kessler permit earlier active mobilization, which reduces adhesion formation.",
-          complications: [
-            ["Adhesion formation", "Start early protected motion (short-arc protocol); atraumatic technique; structured hand therapy."],
-            ["Tendon rupture / gap formation", "Use a multi-strand repair (4-strand beats 2-strand); protected mobilization; immediate re-repair if ruptured."],
-            ["Pulley damage (zone II)", "Preserve A2/A4 pulleys; vent only when necessary; repair the sheath when feasible."],
-            ["Stiffness / contracture", "Structured splinting and therapy; consider tenolysis only after 6–12 months of failed conservative treatment."]
-          ],
-          removal: "Permanent (non-absorbable). Protect the repair for 8–12 weeks.",
-          steps: [
-            { t: "Freshen the ends", c: "Trim both tendon ends with a fresh scalpel to remove frayed tissue, working on a firm, flat surface." },
-            { t: "Core bite & locking loop", c: "Enter the core suture 1 cm from the cut end; run it longitudinally and exit transversely to create a locking loop." },
-            { t: "Cross & mirror", c: "Cross to the distal stump and mirror the configuration, taking the same 1 cm bite with its own locking loop." },
-            { t: "Tie the core", c: "Appose the stumps by tensioning both core limbs (4-strand preferred) and tie with square throws." },
-            { t: "Epitendinous suture", c: "Add a 6-0 running peripheral suture around the repair junction to smooth the surface and add ~25% strength." }
-          ]
-        },
-        {
-          id: "bunnell", category: "ortho", icon: "🦴",
-          name: "Bunnell Tendon Repair",
-          tagline: "Criss-cross multi-strand core for robust tendon approximation.",
-          videoId: "paXHJl_Hccc",
-          videoSource: "Hand, Plastic, Reconstructive & Nerve Surgery",
-          tags: ["Tendon", "Criss-cross", "Core suture"],
-          thread: {
-            material: "Non-absorbable braided core (Ethibond 3-0 / 4-0); epitendinous 6-0.",
-            absorbable: "No",
-            sizes: "Core 3-0 / 4-0 · Epitendinous 6-0",
-            needle: "Round-bodied (tapered) point for tendon, 3/8 circle",
-            brands: "Ethibond 3-0 · Prolene 6-0"
-          },
-          indications: [
-            "Tendon lacerations needing a robust multi-strand core repair",
-            "Historically the standard for flexor tendons — still taught for its crossing-lock mechanics",
-            "Repairs where strong grasp of both stumps is essential"
-          ],
-          technique: [
-            "Enter the proximal stump and weave the suture in a criss-cross (zig-zag) pattern along the tendon.",
-            "Exit the proximal stump at the cut end.",
-            "Cross to the distal stump and mirror the criss-cross weave.",
-            "Tie the two ends with the repair tensioned to appose the stumps without bunching."
-          ],
-          note: "The criss-cross strands can compromise intratendinous blood supply; multi-strand locking repairs (modified Kessler, M-Tang) are generally preferred today. Bunnell remains valuable for its historical teaching and where a strong 2-strand grasp is acceptable.",
-          complications: [
-            ["Adhesion / impaired gliding", "Criss-crossing strands can cross intratendinous vessels — minimize passes; start early motion therapy."],
-            ["Rupture", "Protect the repair for 8–12 weeks; educate the patient; avoid early resisted flexion."],
-            ["Gap formation", "Take secure bites 1 cm from the cut end and lock each crossing loop."],
-            ["Stiffness", "Splinting plus supervised therapy; address adhesions surgically only after prolonged conservative treatment."]
-          ],
-          removal: "Permanent (non-absorbable). Protect the repair for 8–12 weeks.",
-          steps: [
-            { t: "Entry & first limb", c: "Enter the proximal stump and run the first limb longitudinally toward the cut end." },
-            { t: "Criss-cross weave", c: "Cross back diagonally to create a zig-zag weave that grasps multiple tendon fiber bundles." },
-            { t: "Exit & mirror", c: "Exit at the cut end, cross to the distal stump, and mirror the criss-cross weave on that side." },
-            { t: "Appose & tie", c: "Tension both limbs to appose the stumps without bunching, then tie with square throws." },
-            { t: "Peripheral support", c: "Consider an epitendinous suture; protect the repair with splinting and controlled early mobilization." }
-          ]
-        }
-      ];
-
-      const CATS = {
-        basic:    { no: "01", grid: "grid-basic" },
-        advanced: { no: "02", grid: "grid-advanced" },
-        ortho:    { no: "03", grid: "grid-ortho" }
-      };
-
-      // ============================================================
-      // CLINICAL PATHWAY ACCORDION
-      // ============================================================
-      const PATHWAY = [
-        {
-          no: "01",
-          title: "Pre-Suturing Preparation",
-          sub: "Equipment, sterility, wound cleaning and patient assessment — everything before the first stitch.",
-          intro: "Preparation prevents most complications. Assemble the tray, secure the sterile field, and prepare both the wound and the patient before a needle ever touches skin.",
-          video: { label: "Intro to suturing — equipment & preparation", id: "NnKdmjX5pWU", src: "Buck Parker, M.D." },
-          topics: [
-            { icon: "🧰", t: "Equipment setup", items: [
-              "Suture tray: needle holder, Adson toothed forceps, stitch scissors, scalpel (#11 / #15), skin hooks, gauze",
-              "Suture and needle pre-selected by site (see each technique module's thread table)",
-              "Irrigation: 50–100 mL syringe with 18–19G splash-shield needle, sterile saline",
-              "Sterile gloves, gown, mask and eye protection",
-              "Local anesthetic, 8.4% bicarbonate, 27–30G needles"
-            ]},
-            { icon: "🧤", t: "Sterile field", items: [
-              "Full aseptic technique — never sacrifice sterility for speed",
-              "Skin prep: 2% chlorhexidine or iodophor, from wound outward in concentric circles",
-              "Remove gross contamination before prepping so debris is not pushed into the tissue",
-              "Drape with fenestrated drapes to create a clean working field"
-            ]},
-            { icon: "💧", t: "Wound cleaning & irrigation", items: [
-              "Irrigate with sterile saline under pressure (≈8 psi, via splash shield) until visibly clean",
-              "Debride devitalized tissue and remove foreign bodies under good light",
-              "Achieve hemostasis — pressure, ligature or cautery — before closure",
-              "Culture only for gross infection or delayed presentation"
-            ]},
-            { icon: "🩺", t: "Patient assessment", items: [
-              "History: mechanism, time since injury (over 6–8 h raises infection risk), contamination, allergies, tetanus status, anticoagulants, diabetes / immunosuppression",
-              "Exam: distal neurovascular status, tendon and nerve function, bony tenderness, wound depth and involvement",
-              "Tetanus: booster if last dose over 5–10 years; tetanus immunoglobulin for tetanus-prone wounds in the unvaccinated",
-              "Antibiotics are not routine — reserve for bites, gross contamination and immunocompromised patients"
-            ]}
-          ]
-        },
-        {
-          no: "02",
-          title: "Local Anesthesia",
-          sub: "Agents, indications, dosing and precise injection technique.",
-          intro: "Effective and safe anesthesia gives you a comfortable patient and a controlled surgical field.",
-          video: { label: "Infiltrating a wound with local anesthetic before suturing", id: "ssLuaeo1VTk", src: "Apprentice Doctor MedSkills" },
-          topics: [
-            { icon: "💉", t: "Types of anesthetics", items: [
-              "Lidocaine 1% — onset 1–3 min, lasts 1–2 h (2–4 h with epinephrine)",
-              "Bupivacaine 0.25–0.5% — slower onset, lasts 4–8 h, ideal for longer repairs",
-              "Mepivacaine 1–2% — intermediate duration, low cardiac risk profile",
-              "Buffering (10:1 lidocaine with 8.4% bicarbonate) markedly reduces the sting"
-            ]},
-            { icon: "⚖️", t: "Dosing & safety", items: [
-              "Lidocaine plain: max 4 mg/kg (≈300 mg); with epinephrine: 7 mg/kg (≈500 mg)",
-              "Bupivacaine: max 2–3 mg/kg",
-              "Epinephrine: traditional caution in digits, pinna and penis — current evidence supports safe use in healthy patients; follow local protocol",
-              "Toxicity (perioral tingling, metallic taste, tinnitus, confusion, seizures, arrhythmia): stop, oxygen, airway support, treat seizures"
-            ]},
-            { icon: "🎯", t: "Indications", items: [
-              "Direct infiltration through the wound edges — most simple lacerations",
-              "Field block — circumferential anesthesia around the area",
-              "Digital block — two dorsal injections at the base of the digit; never a circumferential ring",
-              "Regional blocks for complex hand and facial repairs"
-            ]},
-            { icon: "✍️", t: "Injection technique", items: [
-              "Aspirate before every injection to avoid intravascular delivery",
-              "Inject slowly into the subcutaneous plane; through open wound edges when possible — less painful",
-              "Use the smallest gauge that flows (27–30G) and warm the solution",
-              "Wait for full onset and test the field before starting"
-            ]}
-          ]
-        },
-        {
-          no: "03",
-          title: "Complete Step-by-Step Clinical Pathway",
-          sub: "From the doors of the ER to discharge — one chronological workflow.",
-          intro: "The entire journey of a laceration patient as a single, correct sequence. Each step flows into the next.",
-          video: { label: "Hand laceration repair — full procedure", id: "3Zy1W31r6ME", src: "Dr. Carlo Oller" },
-          steps: [
-            { t: "Arrival & triage", c: "Assess life threats first (ABCDE). Control active bleeding with direct pressure. Note mechanism and time. Check tetanus status and allergies." },
-            { t: "History taking", c: "Mechanism (sharp, crush or bite), time since injury, contamination (soil, glass, organic matter), handedness and occupation, anticoagulants, steroids, diabetes, prior wound infections." },
-            { t: "Examination", c: "Distal neurovascular status — capillary refill, sensation, pulses. Test tendons and nerves. Palpate for bony tenderness; X-ray for suspected fracture or retained foreign body." },
-            { t: "Wound exploration", c: "Assess depth under good light — does it reach fascia, joint, or tendon sheath? Look for tendon and nerve injury before closing." },
-            { t: "Analgesia & anesthesia", c: "Analgesia for pain control, then local anesthesia with accurate dosing (Section 02). Wait for full effect before proceeding." },
-            { t: "Wound preparation", c: "Irrigate under pressure until clean, debride devitalized edges, control bleeding, and dry the field." },
-            { t: "Closure plan", c: "Select technique by site, tension and cosmesis — simple interrupted, running, mattress or subcuticular. Choose material and size from the site table." },
-            { t: "Suture & tie", c: "Everting bites of equal depth and distance; surgeon's knot plus 3–4 square throws. Reassess symmetry as you work." },
-            { t: "Dressing", c: "Non-adherent layer on the wound, absorbent dressing, secure with tape; splint across joints at risk." },
-            { t: "Discharge & aftercare", c: "Removal schedule by site (face 5 d, scalp/neck 7 d, trunk 7–10 d, extremities 10–14 d). Return signs: spreading redness, swelling, discharge, fever. Tetanus booster if due." }
-          ]
-        },
-        {
-          no: "04",
-          title: "Complications & Management",
-          sub: "Identify post-suturing complications early and act decisively.",
-          intro: "Know what to look for after closure — and intervene early before a small problem becomes a big one.",
-          video: { label: "Diagnosis & treatment of surgical site infection", id: "8BZyEmIgx0k", src: "citizensurgeon" },
-          topics: [
-            { icon: "🦠", t: "Infection", items: [
-              "Signs: spreading erythema, warmth, pain out of proportion, purulent discharge, fever",
-              "Remove affected sutures; open and drain abscesses; culture purulent material",
-              "Antibiotics covering staph and strep; add gram-negative cover for bites (e.g. amoxicillin-clavulanate)",
-              "Review at 24–48 h"
-            ]},
-            { icon: "💥", t: "Wound dehiscence", items: [
-              "Causes: excess tension, early suture removal, infection, poor technique",
-              "Superficial gap → heal by secondary intention with dressings",
-              "Clean full-thickness dehiscence → re-suture after reassessment",
-              "Infected dehiscence → never close; manage as infection"
-            ]},
-            { icon: "🩸", t: "Bleeding / hematoma", items: [
-              "Persistent ooze → direct pressure; consider reversing anticoagulation when indicated",
-              "Expanding hematoma → evacuate, identify the bleeder, ligate or cauterize, re-close",
-              "Observe for pressure symptoms in closed compartments"
-            ]},
-            { icon: "🪡", t: "Scarring & other", items: [
-              "Stitch marks / cross-hatching → remove on schedule, avoid tension, reinforce with tape",
-              "Keloid / hypertrophic scar → silicone gel or sheets, pressure, intralesional steroids, referral",
-              "Suture granuloma / sinus → remove the suture, pack if draining",
-              "Strangulation / necrosis → loosen over-tightened throws; allow necrotic tissue to declare and granulate",
-              "Needle-stick exposure → first aid, report, follow institutional exposure protocol"
-            ]}
-          ]
-        }
-      ];
-
-      function renderPathway() {
-        const ctn = document.getElementById("pathwayCtn");
-        if (!ctn) return;
-        ctn.innerHTML = PATHWAY.map(function (sec) {
-          const topics = sec.topics ? '<div class="acc-grid">' + sec.topics.map(function (t) {
-            return (
-              '<div class="topic-card"><h5>' + t.icon + " " + t.t + "</h5><ul>" +
-              t.items.map(function (i) { return "<li>" + i + "</li>"; }).join("") +
-              "</ul></div>"
-            );
-          }).join("") + "</div>" : "";
-
-          const steps = sec.steps ? '<div class="timeline">' + sec.steps.map(function (s, i) {
-            return '<div class="tl-step"><span class="tl-tag">Step ' + (i + 1) + '</span><b>' + s.t + "</b><p>" + s.c + "</p></div>";
-          }).join("") + "</div>" : "";
-
-          const video = sec.video
-            ? (sec.video.id
-                ? '<div class="video-frame-sm"><iframe src="https://www.youtube-nocookie.com/embed/' + sec.video.id + '" title="' + sec.video.label + '" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>' + (sec.video.src ? '<p class="video-meta">🎬 Video · <b>' + sec.video.src + '</b></p>' : "")
-                : '<div class="video-slot" aria-label="' + sec.video.label + ' — video placeholder"><span class="play">▶</span><div><b>' + sec.video.label + "</b><span>Video placeholder — add a videoId in the data to embed a clip here</span></div></div>")
-            : "";
-
-          return (
-            '<div class="acc-item">' +
-              '<button type="button" class="acc-btn" aria-expanded="false">' +
-                '<span class="acc-num">' + sec.no + "</span>" +
-                '<span class="acc-btn-tx"><b>' + sec.title + "</b><span>" + sec.sub + "</span></span>" +
-                '<span class="acc-chev">▾</span>' +
-              "</button>" +
-              '<div class="acc-panel"><div class="acc-inner">' +
-                '<p class="acc-intro">' + sec.intro + "</p>" +
-                video +
-                steps +
-                topics +
-              "</div></div>" +
-            "</div>"
-          );
-        }).join("");
-
-        ctn.querySelectorAll(".acc-item").forEach(function (item, idx) {
-          const btn = item.querySelector(".acc-btn");
-          btn.addEventListener("click", function () {
-            const wasOpen = item.classList.contains("open");
-            ctn.querySelectorAll(".acc-item.open").forEach(function (o) {
-              o.classList.remove("open");
-              o.querySelector(".acc-btn").setAttribute("aria-expanded", "false");
-            });
-            if (!wasOpen) {
-              item.classList.add("open");
-              btn.setAttribute("aria-expanded", "true");
-            }
-          });
-          if (idx === 0) {
-            item.classList.add("open");
-            btn.setAttribute("aria-expanded", "true");
-          }
-        });
-      }
-
-      // ============================================================
-      // DASHBOARD RENDER
-      // ============================================================
-      const modalBackdrop = document.getElementById("modalBackdrop");
-      const modalBody = document.getElementById("modalBody");
-
-      function cardHTML(d) {
-        const tags = d.tags.map(function (t) { return "<span>" + t + "</span>"; }).join("");
-        return (
-          '<article class="card" role="button" tabindex="0" aria-label="Open ' + d.name + ' module" data-id="' + d.id + '">' +
-            '<div class="card-top"><div class="card-icon">' + d.icon + '</div><div class="card-arrow">→</div></div>' +
-            "<h3>" + d.name + "</h3>" +
-            "<p>" + d.tagline + "</p>" +
-            '<div class="tags">' + tags + "</div>" +
-          "</article>"
-        );
-      }
-
-      function renderGrids() {
-        Object.keys(CATS).forEach(function (cat) {
-          const grid = document.getElementById(CATS[cat].grid);
-          const items = SUTURES.filter(function (s) { return s.category === cat; });
-          grid.innerHTML = items.map(cardHTML).join("");
-        });
-        document.querySelectorAll(".card").forEach(function (card) {
-          const open = function () { openModal(card.dataset.id); };
-          card.addEventListener("click", open);
-          card.addEventListener("keydown", function (e) {
-            if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
-          });
-        });
-      }
-
-      // ============================================================
-      // MODAL + INTERACTIVE STEPPER
-      // ============================================================
-      let currentSteps = [];
-      let stepIndex = 0;
-
-      function sectionTitle(no, title) {
-        return '<div class="m-sec-title"><span class="num">' + no + "</span>" + title + "</div>";
-      }
-
-      function buildModal(d) {
-        const specRows = [
-          ["Material", d.thread.material],
-          ["Absorbable", d.thread.absorbable],
-          ["Recommended size", d.thread.sizes],
-          ["Needle", d.thread.needle],
-          ["Common brands", d.thread.brands]
-        ].map(function (r) { return '<div class="row"><div class="k">' + r[0] + '</div><div class="v">' + r[1] + "</div></div>"; }).join("");
-
-        const comps = d.complications.map(function (c) {
-          return '<div class="comp"><div class="c-name">' + c[0] + '</div><div class="c-mgmt"><b>Management:</b> ' + c[1] + "</div></div>";
-        }).join("");
-
-        const reminder = d.removal ? '<div class="reminder">📅 <b>Suture removal / protection:</b> ' + d.removal + "</div>" : "";
-        const note = d.note ? '<div class="clinic-note">💡 <b>Clinical note:</b> ' + d.note + "</div>" : "";
-
-        return (
-          '<div class="m-sec">' + sectionTitle("01", "Optimal Thread Specifications") +
-            '<div class="spec">' + specRows + "</div>" +
-          "</div>" +
-
-          '<div class="m-sec">' + sectionTitle("02", "Indications & Technique") +
-            '<div class="two-col">' +
-              '<div class="panel"><h4>Indications</h4><ul>' + d.indications.map(function (i) { return "<li>" + i + "</li>"; }).join("") + "</ul></div>" +
-              '<div class="panel"><h4>Step-by-step technique</h4><ol>' + d.technique.map(function (t) { return "<li>" + t + "</li>"; }).join("") + "</ol></div>" +
-            "</div>" + reminder + note +
-          "</div>" +
-
-          '<div class="m-sec">' + sectionTitle("03", "Complications & Management") +
-            '<div class="comp-grid">' + comps + "</div>" +
-          "</div>" +
-
-          '<div class="m-sec">' + sectionTitle("04", "Video Demonstration & Step-by-Step Guide") +
-            '<div class="stepper">' +
-              '<div class="video-wrap" id="videoWrap">' +
-                '<div class="video-frame">' +
-                  '<iframe src="https://www.youtube-nocookie.com/embed/' + d.videoId + '" title="' + d.name + ' — technique demonstration" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>' +
-                "</div>" +
-                '<p class="video-meta">🎬 Video demonstration · <b>' + d.videoSource + '</b> — watch the exact hand movements before practicing.</p>' +
-              "</div>" +
-              '<div class="stage-cap"><h5 id="stepTitle"></h5><p id="stepCap"></p></div>' +
-              '<div class="stage-controls">' +
-                '<button id="stepPrev" aria-label="Previous step">←</button>' +
-                '<div class="dots" id="stepDots"></div>' +
-                '<button id="stepNext" aria-label="Next step">→</button>' +
-              "</div>" +
-              '<div class="progress"><div class="bar" id="stepBar"></div></div>' +
-              '<p class="step-counter" id="stepCounter"></p>' +
-            "</div>" +
-          "</div>"
-        );
-      }
-
-      function renderStepper() {
-        const total = currentSteps.length;
-        const s = currentSteps[stepIndex];
-        const titleEl = document.getElementById("stepTitle");
-        const capEl = document.getElementById("stepCap");
-        const counterEl = document.getElementById("stepCounter");
-        const barEl = document.getElementById("stepBar");
-        const dotsEl = document.getElementById("stepDots");
-        const prevBtn = document.getElementById("stepPrev");
-        const nextBtn = document.getElementById("stepNext");
-
-        titleEl.textContent = s.t;
-        capEl.textContent = s.c;
-        counterEl.textContent = "Step " + (stepIndex + 1) + " of " + total;
-        barEl.style.width = ((stepIndex + 1) / total * 100) + "%";
-        prevBtn.disabled = stepIndex === 0;
-        nextBtn.disabled = stepIndex === total - 1;
-
-        dotsEl.innerHTML = "";
-        for (let i = 0; i < total; i++) {
-          const dot = document.createElement("span");
-          if (i === stepIndex) dot.className = "active";
-          dot.title = "Step " + (i + 1);
-          dot.addEventListener("click", function () { setStep(i); });
-          dotsEl.appendChild(dot);
-        }
-      }
-
-      function setStep(i) {
-        const total = currentSteps.length;
-        if (i < 0 || i >= total || i === stepIndex) return;
-        stepIndex = i;
-        const cap = document.querySelector(".stage-cap");
-        cap.classList.remove("anim");
-        void cap.offsetWidth;
-        renderStepper();
-        cap.classList.add("anim");
-      }
-
-      function initStepper(steps) {
-        currentSteps = steps;
-        stepIndex = 0;
-        renderStepper();
-        const prev = document.getElementById("stepPrev");
-        const next = document.getElementById("stepNext");
-        prev.addEventListener("click", function () { setStep(stepIndex - 1); });
-        next.addEventListener("click", function () { setStep(stepIndex + 1); });
-
-        const stepperEl = document.querySelector(".stepper");
-        let touchX = null;
-        stepperEl.addEventListener("touchstart", function (e) { touchX = e.touches[0].clientX; }, { passive: true });
-        stepperEl.addEventListener("touchend", function (e) {
-          if (touchX === null) return;
-          const dx = e.changedTouches[0].clientX - touchX;
-          if (Math.abs(dx) > 45) setStep(dx < 0 ? stepIndex + 1 : stepIndex - 1);
-          touchX = null;
-        }, { passive: true });
-      }
-
-      function openModal(id) {
-        const d = SUTURES.find(function (s) { return s.id === id; });
-        if (!d) return;
-        document.getElementById("mCat").textContent = CATS[d.category].no + " · " + d.category;
-        document.getElementById("mName").textContent = d.name;
-        document.getElementById("mTagline").textContent = d.tagline;
-        modalBody.innerHTML = buildModal(d);
-        initStepper(d.steps);
-        modalBackdrop.hidden = false;
-        requestAnimationFrame(function () { modalBackdrop.classList.add("open"); });
-        document.body.style.overflow = "hidden";
-      }
-
-      function closeModal() {
-        modalBackdrop.classList.remove("open");
-        document.body.style.overflow = "";
-        setTimeout(function () { modalBackdrop.hidden = true; }, 260);
-      }
-
-      // ============================================================
-      // AI TUTOR CHAT - ADAPTED FOR GITHUB PAGES (STATIC HOSTING)
-      // ============================================================
-      const drawer = document.getElementById("drawer");
-      const chatEl = document.getElementById("chatEl");
-      const chatInput = document.getElementById("chatInput");
-      const sendBtn = document.getElementById("sendBtn");
-
-      let busy = false;
-
-      function esc(t) { return String(t).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
-      function md(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>").replace(/\n/g, "<br>"); }
-      function scrollBottom() { chatEl.scrollTop = chatEl.scrollHeight; }
-
-      function addBubble(kind, html) {
-        const div = document.createElement("div");
-        div.className = kind === "user" ? "msg msg-user" : "msg msg-ai";
-        div.innerHTML = html;
-        chatEl.appendChild(div);
-        scrollBottom();
-        return div;
-      }
-
-      function setTyping(on) {
-        let t = document.getElementById("typingEl");
-        if (on) {
-          if (!t) {
-            t = document.createElement("div");
-            t.id = "typingEl";
-            t.className = "msg msg-ai";
-            t.innerHTML = '<span class="typing-dots"><span></span><span></span><span></span></span>';
-          }
-          chatEl.appendChild(t);
-          scrollBottom();
-        } else if (t && t.parentNode) {
-          t.parentNode.removeChild(t);
-        }
-      }
-
-      // Mock AI response function for GitHub Pages
-      function send() {
-        const text = chatInput.value.trim();
-        if (!text || busy) return;
-        
-        chatInput.value = "";
-        addBubble("user", md(text));
-        busy = true;
-        sendBtn.disabled = true;
-        setTyping(true);
-        
-        // Simulating network delay for AI response
-        setTimeout(function() {
-          setTyping(false);
-          const mockResponse = "أهلاً بك يا دكتور. هذا الموقع مستضاف حالياً كصفحة ثابتة (Static Page) على GitHub Pages، لذلك فإن محرك الذكاء الاصطناعي يعمل في وضع المحاكاة التجريبية. لربط هذه الخاصية بمحرك حقيقي مثل OpenAI أو Gemini، ستحتاج إلى إعداد خادم خلفي (Backend) لضمان أمان مفاتيح الـ API. \n\nهل تود مراجعة أي خطوات أو تقنيات موجودة في المنهج المعروض أمامك؟";
-          addBubble("ai", md(mockResponse));
-          busy = false;
-          sendBtn.disabled = false;
-        }, 1500);
-      }
-
-      function resetChat() {
-        chatEl.innerHTML = "";
-        setTyping(false);
-        const greeting = "أهلاً بك يا دكتور مهند في SutureMaster PRO. أنا الذكاء الاصطناعي الجراحي الخاص بك. يمكنك سؤالي عن أي تقنية أو خطوة من خطوات الخياطة الجراحية وسأقوم بشرحها لك.";
-        addBubble("ai", md(greeting));
-      }
-
-      let chatInitialized = false;
-      function toggleDrawer(forceOpen) {
-        const open = forceOpen !== undefined ? forceOpen : drawer.classList.contains("open");
-        if (open) {
-          drawer.classList.remove("open");
-          setTimeout(function () { drawer.hidden = true; }, 330);
-        } else {
-          if (!chatInitialized) { resetChat(); chatInitialized = true; }
-          drawer.hidden = false;
-          requestAnimationFrame(function () { drawer.classList.add("open"); });
-        }
-      }
-
-      // ============================================================
-      // BINDINGS & INIT
-      // ============================================================
-      document.getElementById("modalClose").addEventListener("click", closeModal);
-      modalBackdrop.addEventListener("click", function (e) { if (e.target === modalBackdrop) closeModal(); });
-      
-      document.addEventListener("keydown", function (e) {
-        if (e.key === "Escape") { closeModal(); return; }
-        if (modalBackdrop.hidden || !modalBackdrop.classList.contains("open")) return;
-        if (e.key === "ArrowRight") { e.preventDefault(); setStep(stepIndex + 1); }
-        else if (e.key === "ArrowLeft") { e.preventDefault(); setStep(stepIndex - 1); }
-      });
-
-      document.getElementById("aiToggle").addEventListener("click", function () { toggleDrawer(false); });
-      document.getElementById("chatFab").addEventListener("click", function () { toggleDrawer(false); });
-      document.getElementById("drawerClose").addEventListener("click", function () { toggleDrawer(true); });
-      sendBtn.addEventListener("click", send);
-      
-      chatInput.addEventListener("keydown", function (e) { 
-        if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); } 
-      });
-
-      const footYear = document.getElementById("footYear");
-      if (footYear) footYear.textContent = new Date().getFullYear();
-
-      renderPathway();
-      renderGrids();
-    })();
-  </script>
-</body>
-</html>
+          removal
